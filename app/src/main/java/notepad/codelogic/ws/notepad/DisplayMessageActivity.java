@@ -15,6 +15,8 @@ public class DisplayMessageActivity extends ActionBarActivity {
         Intent intent = getIntent();
         String message = intent.getStringExtra(MyActivity.EXTRA_MESSAGE);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         addTextView(message);
     }
 
